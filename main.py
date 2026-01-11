@@ -6,8 +6,8 @@ import joblib
 from sklearn.preprocessing import LabelEncoder
 
 # Set up Spotify API credentials (replace with your actual credentials)
-client_id = 'b152015de6df4416ab6723acdf1eef6a'  # Replace with your Spotify Client ID
-client_secret = 'ec045482f65b47f08766bc9e8db43015'  # Replace with your Spotify Client Secret
+client_id = ''  # Replace with your Spotify Client ID
+client_secret = ''  # Replace with your Spotify Client Secret
 
 # Spotify Client setup
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
@@ -104,3 +104,4 @@ if song_name:
                     col.write("---")  # Add separator between song details
 else:
     st.write("Search for a song to get recommendations.")
+
