@@ -9,8 +9,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 # Set up Spotify API credentials (replace with your actual credentials)
-client_id = 'b152015de6df4416ab6723acdf1eef6a'  # Replace with your Spotify Client ID
-client_secret = 'ec045482f65b47f08766bc9e8db43015'  # Replace with your Spotify Client Secret
+client_id = ''  # Replace with your Spotify Client ID
+client_secret = ''  # Replace with your Spotify Client Secret
 
 # Spotify Client setup
 client_credentials_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
@@ -107,3 +107,4 @@ with open('model_metrics.txt', 'w') as f:
     f.write(f'Precision: {precision:.2f}\n')
     f.write(f'Recall: {recall:.2f}\n')
     f.write(f'F1 Score: {f1:.2f}\n')
+
